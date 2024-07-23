@@ -12,28 +12,34 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
             background-color: #1a1a1a;
             color: #e0e0e0;
         }
-        .container {
-            text-align: center;
+        .header, .section, .footer {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
             background: #2c2c2c;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             border-radius: 10px;
+            text-align: center;
+        }
+        .header {
+            background: #333;
         }
         h1 {
             color: #00d4ff;
+            margin-bottom: 10px;
         }
         p {
             font-size: 1.2em;
+            margin-bottom: 20px;
         }
         a.button {
             display: inline-flex;
             align-items: center;
-            margin-top: 20px;
+            margin: 10px;
             padding: 10px 20px;
             color: #fff;
             background-color: #007bff;
@@ -47,13 +53,22 @@
         .icon {
             margin-right: 8px;
         }
+        .footer {
+            font-size: 0.9em;
+            background: #1c1c1c;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>Welcome to the Shortcuts Repository</h1>
-        <p>This repository is dedicated to developing useful and innovative Apple Shortcuts.</p>
-        <p>To learn more and contribute, visit our GitHub repository or explore Routine Hub.</p>
+        <p>This is a space dedicated to developing useful and innovative Apple Shortcuts.</p>
+    </div>
+
+    <div class="section">
+        <h2>Get Involved</h2>
+        <p>We encourage you to share your shortcuts on Routine Hub, where you can showcase your work to a wider audience.</p>
+        <p>Use our repository to prototype, test, and collaborate on shortcuts with other developers.</p>
         <a class="button" href="https://github.com/AGsoftwaree/shortcuts.git" target="_blank">
             <img class="icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="24" height="24">
             Visit the Repository
@@ -62,6 +77,10 @@
             <img class="icon" src="https://routinehub.co/apple-touch-icon.png" alt="Routine Hub" width="24" height="24">
             Explore Routine Hub
         </a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Shortcuts Repository. All rights reserved.</p>
     </div>
 </body>
 </html>
