@@ -2,14 +2,10 @@
 
 Welcome to the Shortcuts Repository! This is a space dedicated to developing useful and innovative Apple Shortcuts.
 
-
-
-### contributions
+### Contributions
 
 To contribute:
 
-Fork the Repository.
-
-Create a Branch with your shortcut.
-
-Submit a Pull Request with your shortcut name.
+1. **Fork the Repository**.
+2. **Create a Branch** with your shortcut.
+3. **Submit a Pull Request** with your shortcut name.
