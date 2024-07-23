@@ -86,3 +86,10 @@ a.button:hover {
 .view-all-button:hover {
     background-color: #218838;
 }
+
+.var {
+    padding: 3px;
+    background-color: #0057b37c;
+    border-radius: 10px;
+    display: inline;
+}

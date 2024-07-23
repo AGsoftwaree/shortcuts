@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Screen</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .error {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border: 4px solid red;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+        }
+
+        .error.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .error-mark {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            stroke-width: 5;
+            stroke: red;
+            fill: transparent;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .error-mark-line {
+            stroke-dasharray: 0, 100;
+            animation: error-mark 0.5s forwards;
+        }
+
+        @keyframes error-mark {
+            to {
+                stroke-dasharray: 100, 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error" id="error">
+        <svg class="error-mark" viewBox="0 0 24 24">
+            <path class="error-mark-line" d="M6 6l12 12M6 18L18 6"/>
+        </svg>
+    </div>
+
+    <script>
+        // Simulate showing the error screen after 1 second
+        setTimeout(() => {
+            document.getElementById('error').classList.add('show');
+        }, 100);
+    </script>
+</body>
+</html>
