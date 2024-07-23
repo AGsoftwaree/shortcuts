@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Search Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #121212; /* Dark background */
+            font-family: Arial, sans-serif;
+        }
+
+        .searching-container {
+            text-align: center;
+            color: #fff;
+        }
+
+        .spinner {
+            margin: 20px auto;
+            border: 8px solid #333; /* Light border */
+            border-top: 8px solid #fff; /* Spinner color */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1.5s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .searching-text {
+            font-size: 24px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .searching-text i {
+            margin-right: 10px;
+        }
+        .material-icons {
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="searching-container">
+        <i class="material-icons">search</i>
+        <div class="searching-text">
+          
+            <span id="searching-message">Searching the Web</span>
+            <span id="dots"></span>
+        </div>
+    </div>
+
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script>
+        const dots = document.getElementById('dots');
+        let dotCount = 0;
+
+        function updateDots() {
+            dotCount = (dotCount + 1) % 4;
+            dots.innerText = '.'.repeat(dotCount);
+        }
+
+        setInterval(updateDots, 500);
+    </script>
+</body>
+</html>
