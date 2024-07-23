@@ -13,6 +13,9 @@
     </div>
 
     <div class="section">
+
+        <input type="text" id="searchBar" onkeyup="filterBlocks()" placeholder="Search for blocks...">
+
         <p>Tap and hold on a block to copy its URL, and use the "Open URL" action to run that block.</p>
         
         <div class="block-preview" style="background: #007bff;">
@@ -48,4 +51,19 @@
 
   
 </body>
+<script>
+    function filterBlocks() {
+        let input = document.getElementById('searchBar').value.toLowerCase();
+        let blocks = document.getElementsByClassName('block-preview');
+
+        for (let i = 0; i < blocks.length; i++) {
+            let blockText = blocks[i].innerText.toLowerCase();
+            if (blockText.includes(input)) {
+                blocks[i].style.display = 'inline-block';
+            } else {
+                blocks[i].style.display = 'none';
+            }
+        }
+    }
+</script>
 </html>
