@@ -4,8 +4,12 @@ Welcome to the Shortcuts Repository! This is a space dedicated to developing use
 
 
 
-## Getting Started
+### Getting Started
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/AGsoftwaree/shortcuts.git
+##Contributing
+
+We welcome contributions! To contribute:
+
+1- Fork the Repository.
+2- Create a Branch with your shortcut.
+3- Submit a Pull Request with your shortcut name.
