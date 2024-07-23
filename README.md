@@ -4,11 +4,9 @@ Welcome to the Shortcuts Repository! This is a space dedicated to developing use
 
 
 
-### Getting Started
+### contributions
 
-##Contributing
-
-We welcome contributions! To contribute:
+To contribute:
 
 Fork the Repository.
 
