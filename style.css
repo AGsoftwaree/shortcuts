@@ -99,4 +99,6 @@ a.button:hover {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 35px;
+    background-color: #1a1a1a;
+    color: white;
 }
